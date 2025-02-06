@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Porfolio.CSS">
+    <link rel="stylesheet" href="Porfolio.JS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./SharkFit/1-3.webp">
+
+
+</head>
+<body>
+    <header class="d-flex justify-content-between align-items-center p-3 bg-light">
+        <img src="./SharkFit/1.png" class="logo" alt="Logo de SharkFit" style="width: 150px;">
+        <div class="iconos d-flex gap-3">
+            <a href="#" aria-label="Pinterest"><i class='bx bxl-pinterest' id="pinterest"></i></a>
+            <a href="#" aria-label="Meta"><i class='bx bxl-meta' id="meta"></i></a>
+            <a href="#" aria-label="Instagram"><i class='bx bxl-instagram' id="instagram"></i></a>
+            <a href="#" aria-label="Ubicación"><i class='bx bxs-location-plus' id="location"></i></a>
+        </div>
+    </header>
+    
+
+    <main>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./SharkFit/craig-lovelidge-4O9NJ3cJo88-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./SharkFit/craig-lovelidge-6s7SkDfdnRU-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./SharkFit/craig-lovelidge-74KgyRNsfvI-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./SharkFit/craig-lovelidge-GdFSJaF02ZI-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./SharkFit/craig-lovelidge-Mw9JbxuQPjI-unsplash.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+    </main>
+    <br>
+
+    <h1 style="text-align: center; margin-top: 20px;">Galería de Imágenes</h1>
+    <div class="gallery">
+        <img src="./SharkFit/AdidasSport.jpg" alt="Imagen 1" onclick="showModal(this, 'Texto descriptivo falso para Imagen 1')">
+
+        <img src="./SharkFit/68C9A2B7-631C-45C2-9090-90D186FC51FB.webp" alt="Imagen 1" onclick="showModal(this, 'Texto descriptivo falso para Imagen 1')">
+       
+        <img src="./SharkFit/5.webp" alt="Imagen 1" onclick="showModal(this, 'Texto descriptivo falso para Imagen 1')">
+        
+        <img src="./SharkFit/195336_410_1200X1500_1_900x.webp" alt="Imagen 2" onclick="showModal(this, 'Texto descriptivo falso para Imagen 2')">
+        
+        <img src="./SharkFit/201123425-1-black.webp" alt="Imagen 2" onclick="showModal(this, 'Texto descriptivo falso para Imagen 2')">
+        
+        <img src="./SharkFit/2020263277696-2.jpg" alt="Imagen 2" onclick="showModal(this, 'Texto descriptivo falso para Imagen 2')">
+        
+        <img src="./SharkFit/camiseta-crosstraining-musculacion-sin-mangas-tirantes-mujer-negro (1).jpg" alt="Imagen 3" onclick="showModal(this, 'Texto descriptivo falso para Imagen 3')">
+        
+        <img src="./SharkFit/camisetas-deportivas-para-mujer-40091406-20644_2.webp" alt="Imagen 3" onclick="showModal(this, 'Texto descriptivo falso para Imagen 3')">
+    </div>
+
+    <div class="modal" id="imageModal">
+        <div class="modal-content">
+            <button class="close" onclick="closeModal()">×</button>
+            <img id="modalImage" src="" alt="Imagen ampliada">
+            <p id="modalText" class="modal-text"></p>
+        </div>
+    </div>
+
+    <section>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/adidas-originals-chándal-negro-970392.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/adidas-originals-chándal-negro-970392__1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <img src="./SharkFit/Sportswear-Womens-Activewear-Workout-Outfit-Fitness-Ribbed-Gym-Shorts-Summer-Yoga-Wear.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+    <br>
+
+    <section class="Marcas">
+        <h1>Nuestas Marcas </h1>
+        <div class="img-fluid">
+            <img src="./SharkFit/logo 1.png" alt="">
+            <img src="./SharkFit/logo 2.png" alt="">
+            <img src="./SharkFit/logo 3.png" alt="">
+            <img src="./SharkFit/logo 4.png" alt="">
+            <img src="./SharkFit/logo 5.png" alt="">
+            <img src="./SharkFit/logo 6.png" alt="">
+            <img src="./SharkFit/logo 7.png" alt="">
+            <img src="./SharkFit/2.png" alt="">
+        </div>
+    </section>
+
+    <br>
+
+    <section>
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/camiseta-crosstraining-musculacion-sin-mangas-tirantes-mujer-negro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/camiseta-crosstraining-musculacion-sin-mangas-tirantes-mujer-negro (1).jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <img src="./SharkFit/camisetas-deportivas-para-mujer-40091406-20644_2.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+           
+          </div>
+    </section>
+    <br>
+
+    <section>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4"> 
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/2020263277696-2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/68C9A2B7-631C-45C2-9090-90D186FC51FB.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/AdidasSport.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <section>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/3232108073_3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./SharkFit/201123425-1-black.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col">
+                <div class="card" >
+                    <img src="./SharkFit/195336_410_1200X1500_1_900x.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                            <a href="#" class="btn btn btn-outline-info">Detalles</a>
+                        </div>
+                        <a href="#" class="btn btn-outline-success">Agregar</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section class="ofertaEspecial">
+        <h1>Productos Destacados</h1>
+
+        <div class="container-editor">
+            <div class="editor__item">
+              <img src="./SharkFit/adidas_multimarcas_international_2048x.webp" alt="" class="editor__img">
+              <p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
+            </div>
+            <div class="editor__item">
+              <img src="./SharkFit/68C9A2B7-631C-45C2-9090-90D186FC51FB.webp" alt="" class="editor__img">
+              <p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
+            </div>
+          </div>
+
+    </section>
+
+    <br>
+
+    <section class="section_form">
+
+        <form id="consultation-form" class="feed-form" action="#">
+          <input required="" placeholder="Nombre" type="text">
+          <input required="" placeholder="Apellido" type="text">
+          <input name="phone" required="" placeholder="Numero de Telefono ">
+          <input name="email" required="" placeholder="Correo Electronico" type="email">
+
+          <textarea name="texto" rows="10" cols="100" placeholder="Mensaje"></textarea>
+          <br>
+          <button class="button_submit">Enviar</button>
+        </form>
+
+    </section>
+
+    <br>
+
+    <footer>
+        <img src="./SharkFit/1.png" class="logo" alt="Logo de SharkFit">
+        
+        <div class="iconos2">
+            <a href=""> <i class='bx bxl-pinterest' id="pinterest"></i></a> 
+            <a href=""> <i class='bx bxl-meta' id="meta"></i></a> 
+            <a href=""> <i class='bx bxl-instagram' id="instagram"></i></a> 
+            <a href=""> <i class='bx bxs-location-plus' id="location"></i></a> 
+        </div>
+        <p>©SharkFit Todos los Derechos Reservados</p>
+    </footer>
+
+
+    <script src="./Porfolio.JS"></script>
+</body>
+</html>
