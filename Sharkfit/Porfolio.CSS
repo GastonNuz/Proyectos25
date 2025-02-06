@@ -1,0 +1,219 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #caf0f7;}
+
+  body h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;  }
+
+header {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #417884;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+  @media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0;
+    }
+  }
+
+  @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+
+main {
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  display: flex;
+  justify-content: center;}
+
+  main img {
+    border-radius: 50%;
+    height: 10rem;
+    padding: 5%;}
+
+    @-webkit-keyframes scale-in-center {
+      0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+      }
+    }
+    @keyframes scale-in-center {
+      0% {
+        -webkit-transform: scale(0);
+                transform: scale(0);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: scale(1);
+                transform: scale(1);
+        opacity: 1;
+      }
+    }
+    
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.Intermedio{
+  padding: 10%;
+  color: white;
+  font-style: italic;
+  text-decoration: underline;
+  background: url(./SharkFit/Tienda.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+  .Intermedio2 h1 {
+    font-size: 60px;
+  }
+
+
+.Intermedio2 {
+  height: 30vw;
+  padding: 10%;
+  color: white;
+  font-style: italic;
+  text-decoration: underline;
+  background: url(./SharkFit/Suplementos/photo-1595348020949-87cdfbb44174.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+  .Intermedio2 h1 {
+    font-size: 40px;
+  }
+
+#productos {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;}
+
+
+.producto {
+  background-color: #417884;
+  color: #caf0f7;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  flex: 0 1 calc(33.33% - 20px);
+  text-align: center;
+  box-shadow: 0 13px 7px rgba(0, 0, 0, 0.3);}
+
+  @media screen and (max-width: 768px) {
+    .producto {
+        flex: 0 1 calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .producto {
+        flex: 1 0 100%;
+        margin: 10px 0;
+    }
+  }
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Estilos del carrito de compras */
+#carrito {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+}
+
+#lista-carrito li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+#total-carrito {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#vaciar-carrito {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#vaciar-carrito:hover {
+  background-color: #555;
+}
+
+button {
+  border-radius: 20px;
+  box-shadow: 0 13px 7px rgba(0, 0, 0, 0.3);
+  background-color: #caf0f7;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #417884;
+  color: #caf0f7;
+}
+
+.Videosyle {
+  display: block;
+  margin: auto;
+}
